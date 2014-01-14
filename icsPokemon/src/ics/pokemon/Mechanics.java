@@ -36,6 +36,6 @@ public class Mechanics {
 	}
 	
 	public static double dmgEffect() {
-		return 0.0;
+		return 1.0;
 	}
 }
