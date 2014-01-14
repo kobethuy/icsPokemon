@@ -1,2 +1,2 @@
-icsPokemon
+Pokemon Battle Arena
 ==========
