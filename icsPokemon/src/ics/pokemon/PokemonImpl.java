@@ -11,7 +11,6 @@ import java.util.ArrayList;
 public class PokemonImpl extends Pokemon{
 		
 	public PokemonImpl (String name, int level) {
-		setHealth(100);
 		setLevel(level);
 		setName(name);
 	}
@@ -24,6 +23,32 @@ public class PokemonImpl extends Pokemon{
 	@Override
 	public int getLevel() {
 		return super.level;
+	}
+	
+	@Override
+	public int getAttack() {
+		return super.attack;
+	}
+
+	@Override
+	public int getDefense() {
+		return super.defense;
+	}
+
+	@Override
+	public int getSpeed() {
+		return super.speed;
+	}
+
+	@Override
+	public int getSpdatk() {
+		return super.spdatk;
+	}
+
+	@Override
+	public int getSpddef() {
+		
+		return super.spddef;
 	}
 	
 	@Override
@@ -64,5 +89,30 @@ public class PokemonImpl extends Pokemon{
 	@Override
 	public void setMoveList(ArrayList<String> moveList) {
 		super.moveList = moveList;
+	}
+	
+	@Override
+	public void setAttack(int attack) {
+		super.attack = attack;
+	}
+
+	@Override
+	public void setDefense(int defense) {
+		super.defense = defense;
+	}
+
+	@Override
+	public void setSpeed(int speed) {
+		super.speed = speed;		
+	}
+
+	@Override
+	public void setSpdatk(int spdatk) {
+		super.spdatk = spdatk;
+	}
+
+	@Override
+	public void setSpddef(int spddef) {
+		super.spddef = spddef;
 	}
 }
