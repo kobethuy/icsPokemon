@@ -13,6 +13,7 @@ public class Human extends Player implements Turn {
 	
 	public Human(String name) {
 		setName(name);
+		setPokemonList(new ArrayList<PokemonImpl>());
 	}
 
 	@Override
@@ -20,31 +21,26 @@ public class Human extends Player implements Turn {
 		
 	}
 
-	
 	@Override
 	public boolean Pokemon() {
-		return false;
+		return true;
 	}
 
-	
 	@Override
 	public boolean Item() {
-		return false;
+		return true;
 	}
 
-	
 	@Override
 	public boolean Quit() {
-		return false;
+		return true;
 	}
 
-	
 	@Override
 	public String getName() {
 		return super.name;
 	}
 
-	
 	@Override
 	public ArrayList<PokemonImpl> getPokemonList() {
 		return super.pokemonList;
@@ -55,13 +51,11 @@ public class Human extends Player implements Turn {
 		return false;
 	}
 
-	
 	@Override
 	public void setName(String name) {
 		super.name = name;
 	}
 
-	
 	@Override
 	public void setHuman(boolean isHuman) {
 		super.isHuman = isHuman;

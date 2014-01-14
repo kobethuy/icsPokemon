@@ -9,8 +9,8 @@ package ics.pokemon;
  */
 public class Watcher {
 	
-	private Human playerOne, playerTwo;
-	private Comp comp;
+	private static Human playerOne, playerTwo;
+	private static Comp comp;
 	private boolean isDone;
 	
 	public Watcher(String name) {
@@ -25,28 +25,28 @@ public class Watcher {
 		setDone(false);
 	}
 
-	public Human getPlayerOne() {
-		return this.playerOne;
+	public static Human getPlayerOne() {
+		return playerOne;
 	}
 	
-	public Human getPlayerTwo() {
-		return this.playerTwo;
+	public static Human getPlayerTwo() {
+		return playerTwo;
 	}
 	
-	public Comp getComp() {
-		return this.comp;
+	public static Comp getComp() {
+		return comp;
 	}
 
 	public void setPlayerOne(Human playerOne) {
-		this.playerOne = playerOne;
+		Watcher.playerOne = playerOne;
 	}
 
 	public void setPlayerTwo(Human playerTwo) {
-		this.playerTwo = playerTwo;
+		Watcher.playerTwo = playerTwo;
 	}
 
 	public void setComp(Comp comp) {
-		this.comp = comp;
+		Watcher.comp = comp;
 	}
 
 	public boolean isDone() {

@@ -57,12 +57,12 @@ public class PokemonImpl extends Pokemon{
 	}
 	
 	@Override
-	public String getType() {
+	public ArrayList<PokemonType> getType() {
 		return super.type;
 	}
 
 	@Override
-	public ArrayList<String> getMoveList() {
+	public ArrayList<PokemonMove> getMoveList() {
 		return super.moveList;
 	}
 	
@@ -82,12 +82,12 @@ public class PokemonImpl extends Pokemon{
 	}
 
 	@Override
-	public void setType(String type) {
+	public void setType(ArrayList<PokemonType> type) {
 		super.type = type;
 	}
 
 	@Override
-	public void setMoveList(ArrayList<String> moveList) {
+	public void setMoveList(ArrayList<PokemonMove> moveList) {
 		super.moveList = moveList;
 	}
 	

@@ -13,6 +13,7 @@ public class Comp extends Player implements AI {
 	
 	public Comp(String name) {
 		setName(name);
+		setPokemonList(new ArrayList<PokemonImpl>());
 	}
 
 	@Override
