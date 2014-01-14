@@ -52,6 +52,16 @@ public class PokemonImpl extends Pokemon{
 	}
 	
 	@Override
+	public int getAccuracy() {
+		return super.accuracy;
+	}
+
+	@Override
+	public int getEvasion() {
+		return super.evasion;
+	}
+
+	@Override
 	public String getName() {
 		return super.name;
 	}
@@ -114,5 +124,15 @@ public class PokemonImpl extends Pokemon{
 	@Override
 	public void setSpddef(int spddef) {
 		super.spddef = spddef;
+	}
+
+	@Override
+	public void setAccuracy(int accuracy) {
+		super.accuracy = accuracy;
+	}
+
+	@Override
+	public void setEvasion(int evasion) {
+		super.evasion = evasion;
 	}
 }
